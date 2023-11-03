@@ -1,16 +1,15 @@
+// Business Logic
+
+function Pizza(size, toppings) {
+	this.size = size
+	this.toppings = Toppings
+}
+
+function Toppings() {
+	this.adds = additionalToppings
+}
+
 // dropdown check list
-// var checkList = document.getElementById('listSize');
-// checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
-//   if (checkList.classList.contains('visible'))
-//     checkList.classList.remove('visible');
-//   else
-//     checkList.classList.add('visible');
-// }
-
-window.onload = (event) => {
-  initMultiselect();
-};
-
 function initMultiselect() {
   checkboxStatusChange();
 
@@ -68,3 +67,10 @@ function toggleCheckboxArea(onlyHide = false) {
     checkboxes.style.display = "none";
   }
 }
+
+
+
+// UI Logic
+window.onload = (event) => {
+  initMultiselect();
+};
