@@ -20,7 +20,7 @@
 
   <div class="form-group col-sm-8">
     <label for="dur">SELECT YOUR SIZE</label>
-    <select id="dur" class="form-select">
+    <select id="size" class="form-select">
       <option value="12" selected>Small - $12.99</option>
       <option value="24">Medium - $14.99</option>
       <option value="36">Large - $16.99</option>
@@ -29,7 +29,7 @@
   </div>
 
   <div class="form-group col-sm-8">
-    <label for="myMultiselect">Cheese & Sauce Options</label>
+    <label for="cheeseSauce">Cheese & Sauce Options</label>
     <div id="myMultiselect" class="multiselect">
       <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
         <select class="form-select">
@@ -38,10 +38,10 @@
         <div class="overSelect"></div>
       </div>
       <div id="mySelectOptions">
-        <label for="extraCheese"><input type="checkbox" id="extraCheese" onchange="checkboxStatusChange()" value="extraCheese"/> Cheese it up bro! - $1.00 extra </label>
-        <label for="lightCheese"><input type="checkbox" id="lightCheese" onchange="checkboxStatusChange()" value="lightCheese"/> I'm lactos sensitive dude... </label>
-        <label for="extraSauce"><input type="checkbox" id="extraSauce" onchange="checkboxStatusChange()" value="extraSauce"/> Get lost in the sauce! - $0.75 extra</label>
-        <label for="lightSauce"><input type="checkbox" id="lightSauce" onchange="checkboxStatusChange()" value="lightSauce"/> No one likes a slip'n'slide 'za... </label>
+        <label for="extraCheese"><input type="checkbox" id="extraCheese" onchange="checkboxStatusChange()" value="Extra Cheese"/> Cheese it up bro! - $1.00 extra </label>
+        <label for="lightCheese"><input type="checkbox" id="lightCheese" onchange="checkboxStatusChange()" value="Light Cheese"/> I'm lactos sensitive dude... </label>
+        <label for="extraSauce"><input type="checkbox" id="extraSauce" onchange="checkboxStatusChange()" value="Extra Sauce"/> Get lost in the sauce! - $0.75 extra</label>
+        <label for="lightSauce"><input type="checkbox" id="lightSauce" onchange="checkboxStatusChange()" value="Light Sauce"/> No one likes a slip'n'slide 'za... </label>
       </div>
     </div>
   </div>
@@ -49,9 +49,9 @@
 	<div class="form-group col-sm-8">
     <label for="dur">What's Your Favorite Crusty Crust?</label>
     <select id="dur" class="form-select">
-      <option value="tossed" selected>Toss it up! (tossed) </option>
-      <option value="pan">Peter Pan is my hero (pan) </option>
-      <option value="deepDish">Deep as the ocean blue (deep dish - $1.00 extra) </option>
+      <option value="tossed" selected>Toss it up! (tossed)</option>
+      <option value="pan">Peter Pan is my hero (pan)</option>
+      <option value="deepDish">Deep as the ocean blue (deep dish - $1.00 extra)</option>
       <option value="this">I just joined Weight Watchers (thin)</option>
     </select>
   </div>
