@@ -38,7 +38,7 @@
         <div class="overSelect"></div>
       </div>
       <div id="mySelectOptions">
-        <label for="extraCheese"><input type="checkbox" id="=extraCheese" onchange="checkboxStatusChange()" value="extraCheese"/> Cheese it up bro! - $1.00 extra </label>
+        <label for="extraCheese"><input type="checkbox" id="extraCheese" onchange="checkboxStatusChange()" value="extraCheese"/> Cheese it up bro! - $1.00 extra </label>
         <label for="lightCheese"><input type="checkbox" id="lightCheese" onchange="checkboxStatusChange()" value="lightCheese"/> I'm lactos sensitive dude... </label>
         <label for="extraSauce"><input type="checkbox" id="extraSauce" onchange="checkboxStatusChange()" value="extraSauce"/> Get lost in the sauce! - $0.75 extra</label>
         <label for="lightSauce"><input type="checkbox" id="lightSauce" onchange="checkboxStatusChange()" value="lightSauce"/> No one likes a slip'n'slide 'za... </label>
@@ -56,6 +56,47 @@
     </select>
   </div>
 
+	<div class="form-group col-sm-8">
+    <label for="myMultiselect">We got more meat than your local 24 Hour Fitness!</label>
+    <div id="myMultiselect" class="multiselect">
+      <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
+        <select class="form-select">
+          <option>Pick Your Poison</option>
+        </select>
+        <div class="overSelect"></div>
+      </div>
+      <div id="mySelectOptions">
+        <label for="pepperoni"><input type="checkbox" id="pepperoni" onchange="checkboxStatusChange()" value="pepperoni"/> Pepperoni </label>
+        <label for="canadianBacon"><input type="checkbox" id="canadianBacon" onchange="checkboxStatusChange()" value="canadianBacon"/> Canadian Bacon </label>
+        <label for="sausage"><input type="checkbox" id="sausage" onchange="checkboxStatusChange()" value="sausage"/> Sausage </label>
+        <label for="chicken"><input type="checkbox" id="chicken" onchange="checkboxStatusChange()" value="chicken"/> Chicken </label>
+				<label for="ham"><input type="checkbox" id="ham" onchange="checkboxStatusChange()" value="ham"/> Ham </label>
+				<label for="salami"><input type="checkbox" id="salami" onchange="checkboxStatusChange()" value="salami"/> Salami </label>
+				<label for="anchovie"><input type="checkbox" id="anchovie" onchange="checkboxStatusChange()" value="lightSauce"/> Anchovies </label>
+      </div>
+    </div>
+  </div>
+
+	<div class="form-group col-sm-8">
+    <label for="myMultiselect">Veggies Fresher than Febreeze!</label>
+    <div id="myMultiselect" class="multiselect">
+      <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
+        <select class="form-select">
+          <option>Pineapple is a veggie right?</option>
+        </select>
+        <div class="overSelect"></div>
+      </div>
+      <div id="mySelectOptions">
+        <label for="pepperoni"><input type="checkbox" id="pepperoni" onchange="checkboxStatusChange()" value="pepperoni"/> Pepperoni </label>
+        <label for="canadianBacon"><input type="checkbox" id="canadianBacon" onchange="checkboxStatusChange()" value="canadianBacon"/> Canadian Bacon </label>
+        <label for="sausage"><input type="checkbox" id="sausage" onchange="checkboxStatusChange()" value="sausage"/> Sausage </label>
+        <label for="chicken"><input type="checkbox" id="chicken" onchange="checkboxStatusChange()" value="chicken"/> Chicken </label>
+				<label for="ham"><input type="checkbox" id="ham" onchange="checkboxStatusChange()" value="ham"/> Ham </label>
+				<label for="salami"><input type="checkbox" id="salami" onchange="checkboxStatusChange()" value="salami"/> Salami </label>
+				<label for="anchovie"><input type="checkbox" id="anchovie" onchange="checkboxStatusChange()" value="lightSauce"/> Anchovies </label>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
