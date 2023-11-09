@@ -4,11 +4,14 @@ By Grant Abel
 # Development Testing 
 
 ### Describe: Pizza ()
-
-## Test: It should return a pizza object with two properties for size and toppings
+## Test1: It should return a pizza object with two properties for size and toppings
 Code: const myPizza = new Pizza([x, y, z], "medium");
 Result: Pizza { toppings: [x, y, z], size: "medium" }
 
+### Describe: Toppings () <!--???Needed??? -->
+## Test2: It should return 
+Code:
+Result:
 
 
 ### Describe: *further functions; i.e. pizza prototype methods
