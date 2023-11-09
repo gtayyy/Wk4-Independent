@@ -1,4 +1,3 @@
-/* Dropdown Menus */
 .multiselect {
   width: 100%;
 }
@@ -28,14 +27,11 @@
 }
 
 #mySelectOptions label {
-  display: block;
   font-weight: normal;
-  display: block;
   white-space: nowrap;
   min-height: 1.2em;
   background-color: #ffffff00;
   padding: 0 2.25rem 0 .75rem;
-  /* padding: .375rem 2.25rem .375rem .75rem; */
 }
 
 #mySelectOptions label:hover {
