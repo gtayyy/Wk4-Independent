@@ -1,64 +1,28 @@
-// Business Logic
-
-function initMultiselect() {
-  checkboxStatusChange();
-
-  document.addEventListener("click", function(evt) {
-    var flyoutElement = document.getElementById('myMultiselect'),
-      targetElement = evt.target; // clicked element
-
-    do {
-      if (targetElement == flyoutElement) {
-        // This is a click inside. Do nothing, just return.
-        //console.log('click inside');
-        return;
-      }
-
-      // Go up the DOM
-      targetElement = targetElement.parentNode;
-    } while (targetElement);
-
-    // This is a click outside.
-    toggleCheckboxArea(true);
-    //console.log('click outside');
-  });
+function Pizza(size, crust, toppings) {
+	this.size = size;
+	this.crust = crust;
+	this.toppings = toppings;
 }
 
-function checkboxStatusChange() {
-  var multiselect = document.getElementById("mySelectLabel");
-  var multiselectOption = multiselect.getElementsByTagName('option')[0];
+Pizza.prototype.calculateTotal = function () {
+	let basePrice = 0;
+	switch (this.size) {
+			case 'small':
+					basePrice = 12.99;
+					break;
+			case 'medium':
+					basePrice = 13.99;
+					break;
+			case 'large':
+					basePrice = 14.99;
+					break;
+			case 'extraLarge':
+					basePrice = 15.99;
+					break;
+	}
 
-  var values = [];
-  var checkboxes = document.getElementById("mySelectOptions");
-  var checkedCheckboxes = checkboxes.querySelectorAll('input[type=checkbox]:checked');
+	if (this.crust === 'deepDish' || this.crust === 'thin') {
+			basePrice += 1.00;
+	}
 
-  for (const item of checkedCheckboxes) {
-    var checkboxValue = item.getAttribute('value');
-    values.push(checkboxValue);
-  }
-
-  var dropdownValue = "Nothing is selected";
-  if (values.length > 0) {
-    dropdownValue = values.join(', ');
-  }
-
-  multiselectOption.innerText = dropdownValue;
-}
-
-function toggleCheckboxArea(onlyHide = false) {
-  var checkboxes = document.getElementById("mySelectOptions");
-  var displayValue = checkboxes.style.display;
-
-  if (displayValue != "block") {
-    if (onlyHide == false) {
-      checkboxes.style.display = "block";
-    }
-  } else {
-    checkboxes.style.display = "none";
-  }
-}
-
-// UI Logic
-window.onload = (event) => {
-  initMultiselect();
-};
+	

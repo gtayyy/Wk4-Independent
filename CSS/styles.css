@@ -1,39 +1,29 @@
-.multiselect {
-  width: 100%;
+.dropdown {
+	position: relative;
+	display: inline-block;
 }
 
-.selectBox {
-  position: relative;
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
-.selectBox select {
-  width: 100%;
+.dropdown-content input {
+	display: block;
+	margin: 5px;
 }
 
-.overSelect {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.dropbtn {
+	padding: 5px 10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
 }
 
-#mySelectOptions {
-  display: none;
-  border: 0.5px #7c7c7c solid;
-  background-color: #ffffff;
-  max-height: 150px;
-  overflow-y: scroll;
-}
-
-#mySelectOptions label {
-  font-weight: normal;
-  white-space: nowrap;
-  min-height: 1.2em;
-  background-color: #ffffff00;
-  padding: 0 2.25rem 0 .75rem;
-}
-
-#mySelectOptions label:hover {
-  background-color: #1e90ff;
+.dropdown:hover .dropdown-content {
+	display: block;
 }
