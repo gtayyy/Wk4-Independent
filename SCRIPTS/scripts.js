@@ -41,3 +41,9 @@ function submitOrder() {
 					toppings.push(toppingsCheckboxes[i].value);
 			}
 	}
+
+	const pizza = new Pizza(size, crust, toppings);
+	const totalPrice = pizza.calculateTotal();
+
+	document.getElementById('totalPrice').innerText = 'Total Price: $' + totalPrice;
+}

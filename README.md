@@ -15,6 +15,7 @@
 ### Known Bugs _No known bugs._
 
 ## Development Testing 
+
 ### Describe: Pizza ()
 
 Test1: It should return a pizza object with three properties for size, crust and toppings
@@ -39,6 +40,11 @@ Test5: It should sum the order selections to give the order total to new variabl
 Code: Pizza.totalPrice();
 Result: $19.99
 
+### Describe: New order
+
+Test6: it should clear the previous order
+Code: placeAnotherOrder()
+Result: pizzaForm.reset; 
 
 ### License _MIT_
 
