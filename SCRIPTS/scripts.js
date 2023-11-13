@@ -25,4 +25,19 @@ Pizza.prototype.calculateTotal = function () {
 			basePrice += 1.00;
 	}
 
-	
+	const toppingsPrice = this.toppings.length * 0.25;
+	const totalPrice = basePrice + toppingsPrice;
+
+	return totalPrice.toFixed(2);
+};
+
+function submitOrder() {
+	const size = document.getElementById('pizzaSize').value;
+	const crust = document.getElementById('crustType').value;
+	const toppingsCheckboxes = document.getElementsByName('topping');
+	const toppings = [];
+	for (let i = 0; i < toppingsCheckboxes.length; i++) {
+			if (toppingsCheckboxes[i].checked) {
+					toppings.push(toppingsCheckboxes[i].value);
+			}
+	}
