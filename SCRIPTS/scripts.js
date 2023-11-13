@@ -47,3 +47,8 @@ function submitOrder() {
 
 	document.getElementById('totalPrice').innerText = 'Total Price: $' + totalPrice;
 }
+
+function placeAnotherOrder() {
+	document.getElementById('pizzaForm').reset();
+	document.getElementById('totalPrice').innerText = '';
+}
